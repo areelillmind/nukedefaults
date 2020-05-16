@@ -66,11 +66,13 @@ premultKey=d.addCommand("premult", "nuke.createNode('Premult')", "Ctrl+U", short
 
 channelMergeKey=d.addCommand("channelmerge", "nuke.createNode('ChannelMerge')", "Ctrl+M", shortcutContext=2)
 
-import merge_transforms_v2
+## download from here and add to .nuke before uncommenting http://www.nukepedia.com/python/nodegraph/merge_transforms_v2
+#import merge_transforms_v2
 
-MergeTrasnforms=d.addCommand("python/&Merge Transforms", "merge_transforms_v2.start()", "shift+t", shortcutContext=2)
+#MergeTrasnforms=d.addCommand("python/&Merge Transforms", "merge_transforms_v2.start()", "shift+t", shortcutContext=2)
 
 
-import animated_cornerpin_to_matrix
+## Download function from here before uncommenting and add to .nuke. https://gist.github.com/EgbertReichel/1ca0062b7420ab5c1806
+#import animated_cornerpin_to_matrix
 
-d.addCommand('CornerPinToMatrix', 'animated_cornerpin_to_matrix.animatedCP2MTX()', "Ctrl+shift+t", shortcutContext=2, icon='CornerPin.png')
+#d.addCommand('CornerPinToMatrix', 'animated_cornerpin_to_matrix.animatedCP2MTX()', "Ctrl+shift+t", shortcutContext=2, icon='CornerPin.png')
