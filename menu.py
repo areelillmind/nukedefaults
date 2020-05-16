@@ -56,6 +56,9 @@ bboxB=d.addCommand("python/&bbox2B", "bbob_to_b()", "Shift+B", shortcutContext=2
 serveraw=d.addCommand("python/&Serve Raw", "serve_raw()",  "shift+R", shortcutContext=2)
 labelDotsAndStamps=d.addCommand("python/&Label Dots and Stamps", "label_dots_and_stamps()", ",", shortcutContext=2)
 ToggleHide=d.addCommand("python/&Toggle Hide", "toggle_hide()", "shift+h", shortcutContext=2)
+import Copy_With_Inputs as cwp
+d.addCommand("python/&Copy With Input", "cwp.copy_with_inputs()", "Ctrl+C")
+d.addCommand("python/&Paste With Input", "cwp.paste_with_inputs()", "Alt+V")
 
 
 #custom hotkeys
